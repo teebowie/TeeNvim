@@ -15,14 +15,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	vim.cmd([[packadd packer.nvim]])
 end
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]])
-
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
@@ -43,28 +35,36 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
+	use("nathom/filetype.nvim")
 	use("windwp/nvim-autopairs") -- Auto close parentheses
 	use("numToStr/Comment.nvim") -- Comment plugin
-	-- use({ "romgrk/barbar.nvim", requires = { "kyazdani42/nvim-web-devicons" }, disable = true })
 	use("moll/vim-bbye")
 	use("kylechui/nvim-surround")
 	use("lewis6991/impatient.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use("goolord/alpha-nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
-	use({ "akinsho/toggleterm.nvim", tag = "v2.*" })
-
+	use("rcarriga/nvim-notify")
+	-- Lua
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+	})
 	-- Colorschemes
 	use({ "sainnhe/gruvbox-material" })
 	use({ "folke/tokyonight.nvim" })
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "Mofiqul/dracula.nvim" })
+	use({
+		"CanKolay3499/base46",
+	})
 
 	-- Telescope
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
 	-- NvimTree
 	use({

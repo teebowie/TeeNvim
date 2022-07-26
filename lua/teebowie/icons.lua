@@ -2,7 +2,7 @@ local M = {}
 
 M.lspkind = {
 	Namespace = "",
-	Text = " ",
+  Text = " ",
 	Method = " ",
 	Function = " ",
 	Constructor = " ",
@@ -12,7 +12,7 @@ M.lspkind = {
 	Interface = " ",
 	Module = " ",
 	Property = "ﰠ ",
-	Unit = "塞 ",
+	Unit = "塞",
 	Value = " ",
 	Enum = " ",
 	Keyword = " ",
@@ -182,7 +182,7 @@ M.devicons = {
 	},
 }
 
-M.othericons = {
+M.otherIcons = {
 	abc = "  ",
 	array = "  ",
 	arrowReturn = "  ",

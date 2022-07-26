@@ -15,7 +15,7 @@ bufferline.setup({
 		right_trunc_marker = "",
 		max_name_length = 18,
 		max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
-		tab_size = 18,
+		tab_size = 16,
 		diagnostics = "nvim_lsp",
 		diagnostics_update_in_insert = false,
 		offsets = { { filetype = "NvimTree", text = "File Explorer", text_align = "left" } },

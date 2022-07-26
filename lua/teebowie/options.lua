@@ -1,37 +1,44 @@
-local o = vim.opt
-local g = vim.g
+local options = {
+	-- Number settings
+	number = true,
+	relativenumber = true,
+	ruler = false,
 
--- Number settings
-o.number = true
-o.relativenumber = true
-o.ruler = false
+	-- Search settings
+	ignorecase = true,
+	smartcase = true,
 
--- Search settings
-o.ignorecase = true -- ignore case when searching
-o.smartcase = true -- unless the search has a capital letter
+	-- Completion settings
+	completeopt = "menuone,noselect",
+	pumheight = 10,
 
--- Set completeopt to have a better completion experience
-o.completeopt = "menuone,noselect"
+	-- Tab settings
+	tabstop = 2,
+	softtabstop = 2,
+	shiftwidth = 2,
+	expandtab = true,
 
--- 2 spaces instead of tabs
-o.tabstop = 2
-o.softtabstop = 2
-o.shiftwidth = 2
-o.expandtab = true
+	-- Split options
+	splitbelow = true,
+	splitright = true,
 
--- enable the mouse
-o.mouse = "a"
+	-- Other
+	-- clipboard      = "unnamed,unnamedplus", -- Only for Linux
+	cursorline = true, --- Highlight of current line
+	laststatus = 3, --- Have a global statusline at the bottom instead of one for each window
+	mouse = "a", --- Enable mouse
+	scrolloff = 10, --- Always keep space when scrolling to bottom/top edge
+	signcolumn = "yes:1", --- Add extra sign column next to line number
+	smartindent = true, --- Makes indenting smart
+	termguicolors = true, --- Correct terminal colors
+	timeoutlen = 200, --- Faster completion (cannot be lower than 200 because then commenting doesn't work)
+	undofile = true, --- Sets undo to file
+	updatetime = 100, --- Faster completion
+	viminfo = "'1000", --- Increase the size of file history
+	wrap = false, --- Display long lines as just one line
+}
 
--- splits should automatically open right or below
-o.splitbelow = true
-o.splitright = true
+for k, v in pairs(options) do
+  vim.opt[k] = v
+end
 
--- true colors
-o.termguicolors = true
-
--- global statusline
-o.laststatus = 3
-
--- use filetype.lua instead of filetype.vim
-g.did_load_filetypes = 0
-g.do_filetype_lua = 1

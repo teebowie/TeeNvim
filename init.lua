@@ -1,5 +1,7 @@
 require("teebowie.plugins")
 require("teebowie.utils")
+require("teebowie.colorscheme")
+require("teebowie.devicons")
 
 require("teebowie.options")
 require("teebowie.keymaps")
@@ -17,13 +19,8 @@ require("teebowie.trouble")
 require("teebowie.lualine")
 require("teebowie.alpha")
 require("teebowie.treesitter")
-require("teebowie.toggleterm")
+require("teebowie.todo-comments")
 
 -- Must load theme configuration before vim.cmd
 require("teebowie.colors.tokyonight")
 require("teebowie.colors.catppuccin")
-require("teebowie.colorscheme")
-
-require("teebowie.colors.telescope_theming")
--- Todo:
--- Git
