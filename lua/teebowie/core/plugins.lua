@@ -50,14 +50,14 @@ return packer.startup(function(use)
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	})
+  use 'norcalli/nvim-colorizer.lua'
+
 	-- Colorschemes
 	use({ "sainnhe/gruvbox-material" })
 	use({ "folke/tokyonight.nvim" })
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "Mofiqul/dracula.nvim" })
-	use({
-		"CanKolay3499/base46",
-	})
+  use 'navarasu/onedark.nvim'
 
 	-- Telescope
 	use({

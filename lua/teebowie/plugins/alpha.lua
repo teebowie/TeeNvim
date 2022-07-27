@@ -5,7 +5,7 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 local if_nil = vim.F.if_nil
-local icons = require("teebowie.icons")
+local icons = require("teebowie.core.icons")
 
 -- ╭──────────────────────────────────────────────────────────╮
 -- │ Header                                                   │

@@ -31,7 +31,6 @@ local options = {
 	signcolumn = "yes:1", --- Add extra sign column next to line number
 	smartindent = true, --- Makes indenting smart
 	termguicolors = true, --- Correct terminal colors
-	timeoutlen = 200, --- Faster completion (cannot be lower than 200 because then commenting doesn't work)
 	undofile = true, --- Sets undo to file
 	updatetime = 100, --- Faster completion
 	viminfo = "'1000", --- Increase the size of file history
