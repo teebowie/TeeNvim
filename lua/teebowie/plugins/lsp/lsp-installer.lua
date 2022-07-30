@@ -27,14 +27,14 @@ for _, server in pairs(servers) do
     on_attach = require("teebowie.plugins.lsp.handlers").on_attach,
     capabilities = require("teebowie.plugins.lsp.handlers").capabilities,
   }
-  
+
   if server == "tsserver" then
-   local tsserver_opts = require("teebowie.plugins.lsp.settings.tsserver") 
+   local tsserver_opts = require("teebowie.plugins.lsp.settings.tsserver")
    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
   end
 
   if server == "sumneko_lua" then
-   local sumneko_lua_opts = require("teebowie.plugins.lsp.settings.sumneko_lua") 
+   local sumneko_lua_opts = require("teebowie.plugins.lsp.settings.sumneko_lua")
    opts = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
   end
 

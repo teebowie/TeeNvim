@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["base46.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\base46.nvim",
-    url = "https://github.com/jayden-chan/base46.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",

@@ -3,16 +3,10 @@ if not status_ok then
 	return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-	return
-end
-
 local options = {
 	filters = {
 		dotfiles = false,
 	},
-	disable_netrw = true,
 	hijack_netrw = true,
 	open_on_setup = false,
 	ignore_ft_on_setup = { "alpha" },
@@ -21,6 +15,10 @@ local options = {
 	update_focused_file = {
 		enable = true,
 		update_cwd = false,
+	},
+	hijack_directories = {
+		enable = true,
+		auto_open = true,
 	},
 	view = {
 		adaptive_size = true,
@@ -57,7 +55,6 @@ local options = {
 		indent_markers = {
 			enable = false,
 		},
-
 		icons = {
 			show = {
 				file = true,

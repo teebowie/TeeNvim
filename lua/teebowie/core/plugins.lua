@@ -89,7 +89,6 @@ return packer.startup(function(use)
 	-- LSP
 	use("neovim/nvim-lspconfig")
 	use("williamboman/nvim-lsp-installer")
-	-- use 'RRethy/vim-illuminate'
 	use("folke/trouble.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 

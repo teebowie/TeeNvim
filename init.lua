@@ -22,6 +22,3 @@ require("teebowie.plugins.treesitter")
 require("teebowie.plugins.todo-comments")
 require("teebowie.plugins.colorizer")
 
--- Must load theme configuration before vim.cmd
-require("teebowie.core.colors.tokyonight")
-require("teebowie.core.colors.catppuccin")
