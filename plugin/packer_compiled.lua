@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["shade.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\shade.nvim",
-    url = "https://github.com/sunjon/shade.nvim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-fzf-native.nvim",
