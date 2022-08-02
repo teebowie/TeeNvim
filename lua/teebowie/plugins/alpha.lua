@@ -27,7 +27,6 @@ dashboard.section.header.opts = {
 	hl = "AlphaHeader",
 }
 
-
 local leader = "SPC"
 
 local function button(sc, txt, keybind, keybind_opts)
@@ -67,10 +66,6 @@ dashboard.section.buttons.val = {
 	button("-", icons.otherIcons.exit .. " " .. "Exit", "<cmd>exit<CR>", {}),
 }
 
--- ╭──────────────────────────────────────────────────────────╮
--- │ Footer                                                   │
--- ╰──────────────────────────────────────────────────────────╯
-
 local function footer()
 	local plugins = 46
 	local v = vim.version()
@@ -104,9 +99,5 @@ local opts = {
 		margin = 5,
 	},
 }
-
--- ╭──────────────────────────────────────────────────────────╮
--- │ Setup                                                    │
--- ╰──────────────────────────────────────────────────────────╯
 
 alpha.setup(opts)
