@@ -3,18 +3,6 @@ if not status_ok then
 	return
 end
 
--- local load_override = function(default_table)
--- 	local user_table = {}
--- 	user_table = type(user_table) == "table" and user_table or user_table()
--- 	return vim.tbl_deep_extend("force", default_table, user_table)
--- end
---
--- local options = {
--- 	override = require("teebowie.icons").devicons,
--- }
---
--- options = load_override(options)
-
 devicons.setup{
 	override = {
 		default_icon = {

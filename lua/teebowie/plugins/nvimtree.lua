@@ -87,4 +87,3 @@ local options = {
 }
 
 nvim_tree.setup(options)
-

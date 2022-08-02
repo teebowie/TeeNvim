@@ -32,54 +32,34 @@ packer.init({
 
 -- Install plugin here
 return packer.startup(function(use)
+
 	use("wbthomason/packer.nvim") -- Have packer manage itself
+	use("lewis6991/impatient.nvim")
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
 	use("nathom/filetype.nvim")
-	use("windwp/nvim-autopairs") -- Auto close parentheses
-	use("numToStr/Comment.nvim") -- Comment plugin
+	use("rcarriga/nvim-notify")
 	use("moll/vim-bbye")
+  use("kyazdani42/nvim-web-devicons")
+
+	use("windwp/nvim-autopairs")
+	use("numToStr/Comment.nvim")
 	use("kylechui/nvim-surround")
-	use("lewis6991/impatient.nvim")
 	use("nvim-lualine/lualine.nvim")
 	use("goolord/alpha-nvim")
-	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
-	use("rcarriga/nvim-notify")
+	use("akinsho/bufferline.nvim")
 	use("andymass/vim-matchup")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("Shatur/neovim-session-manager")
 	use("stevearc/dressing.nvim")
-  use 'sunjon/shade.nvim'
-
-	-- Lua
-	use({
-		"folke/todo-comments.nvim",
-		requires = "nvim-lua/plenary.nvim",
-	})
+	use("sunjon/shade.nvim")
+	use("kyazdani42/nvim-tree.lua")
+	use("folke/todo-comments.nvim")
 	use("norcalli/nvim-colorizer.lua")
 
-	-- Colorschemes
-	use({ "sainnhe/gruvbox-material" })
-	use({ "folke/tokyonight.nvim" })
-	use({ "catppuccin/nvim", as = "catppuccin" })
-	use({ "Mofiqul/dracula.nvim" })
-	use("navarasu/onedark.nvim")
-
 	-- Telescope
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
+	use({ "nvim-telescope/telescope.nvim" })
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-
-	-- NvimTree
-	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-			"kyazdani42/nvim-web-devicons",
-		},
-		tag = "nightly",
-	})
 
 	-- Completions
 	use("hrsh7th/nvim-cmp")
@@ -97,15 +77,13 @@ return packer.startup(function(use)
 	use("williamboman/nvim-lsp-installer")
 	use("folke/trouble.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
-	use( "kkharji/lspsaga.nvim" )
+	use("kkharji/lspsaga.nvim")
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
 	use("p00f/nvim-ts-rainbow")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
-	-- Automatically set up your configuration after cloning packer.nvim
-	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

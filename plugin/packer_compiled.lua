@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -114,11 +109,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
-  },
   ["dressing.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dressing.nvim",
@@ -133,11 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-material",
-    url = "https://github.com/sainnhe/gruvbox-material"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -229,11 +214,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -268,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["trouble.nvim"] = {
     loaded = true,

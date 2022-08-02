@@ -28,4 +28,5 @@ null_ls.setup({
 	--          })
 	--      end
 	--  end,
+  -- Disable to enable auto-formatting
 })

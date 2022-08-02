@@ -7,10 +7,6 @@ local dashboard = require("alpha.themes.dashboard")
 local if_nil = vim.F.if_nil
 local icons = require("teebowie.core.icons")
 
--- ╭──────────────────────────────────────────────────────────╮
--- │ Header                                                   │
--- ╰──────────────────────────────────────────────────────────╯
-
 local header = {
 	[[                               __                ]],
 	[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
@@ -31,9 +27,7 @@ dashboard.section.header.opts = {
 	hl = "AlphaHeader",
 }
 
--- ╭──────────────────────────────────────────────────────────╮
--- │ Buttons                                                  │
--- ╰──────────────────────────────────────────────────────────╯
+
 local leader = "SPC"
 
 local function button(sc, txt, keybind, keybind_opts)
@@ -78,7 +72,7 @@ dashboard.section.buttons.val = {
 -- ╰──────────────────────────────────────────────────────────╯
 
 local function footer()
-	local plugins = 36
+	local plugins = 46
 	local v = vim.version()
 	return string.format(" v%d.%d.%d   %d ", v.major, v.minor, v.patch, plugins)
 end
@@ -88,6 +82,7 @@ dashboard.section.footer.val = {
 }
 dashboard.section.footer.opts = {
 	position = "center",
+  hl = "AlphaHeader"
 }
 
 local section = {
