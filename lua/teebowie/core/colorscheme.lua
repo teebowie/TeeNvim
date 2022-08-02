@@ -1,6 +1,6 @@
 local theme_opts = {
   base = "base46",
-  theme = "tokyonight",
+  theme = "onedark",
   transparency = false
 }
 

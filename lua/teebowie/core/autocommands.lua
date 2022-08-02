@@ -41,5 +41,3 @@ autocmd("TextYankPost", {
 -- Disable diagnostics in node_modules (0 is current buffer only)
 autocmd("BufRead", { pattern = "*/node_modules/*", command = "lua vim.diagnostic.disable(0)" })
 autocmd("BufNewFile", { pattern = "*/node_modules/*", command = "lua vim.diagnostic.disable(0)" })
-autocmd("BufRead", { pattern = "packer_compiled.lua", command = "lua vim.diagnostic.disable(0)" })
-

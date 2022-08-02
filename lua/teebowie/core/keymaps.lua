@@ -68,5 +68,3 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 -- nvim-trouble
 keymap("n", "<leader>xx", ":TroubleToggle<CR>", opts)
 
--- Terminal
-

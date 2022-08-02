@@ -14,4 +14,6 @@ return {
     "syntax",
     "telescope",
     "treesitter",
+    "lsp",
+    "rainbow",
 }

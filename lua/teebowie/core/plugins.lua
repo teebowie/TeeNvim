@@ -45,19 +45,25 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
 	use("rcarriga/nvim-notify")
+	use("andymass/vim-matchup")
+	use("lukas-reineke/indent-blankline.nvim")
+	use("Shatur/neovim-session-manager")
+	use("stevearc/dressing.nvim")
+  use 'sunjon/shade.nvim'
+
 	-- Lua
 	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	})
-  use 'norcalli/nvim-colorizer.lua'
+	use("norcalli/nvim-colorizer.lua")
 
 	-- Colorschemes
 	use({ "sainnhe/gruvbox-material" })
 	use({ "folke/tokyonight.nvim" })
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "Mofiqul/dracula.nvim" })
-  use 'navarasu/onedark.nvim'
+	use("navarasu/onedark.nvim")
 
 	-- Telescope
 	use({
@@ -91,6 +97,7 @@ return packer.startup(function(use)
 	use("williamboman/nvim-lsp-installer")
 	use("folke/trouble.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use( "kkharji/lspsaga.nvim" )
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")

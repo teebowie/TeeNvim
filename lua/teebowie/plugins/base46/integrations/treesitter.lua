@@ -1,180 +1,192 @@
 return function(colors)
-    return {
-        TSCurrentScope = { bold = true },
+	return {
+		TSAnnotation = {
+			fg = colors.base0F,
+		},
 
-        TSAnnotation = {
-            fg = colors.base0F,
-            sp = "none",
-        },
+		TSAttribute = {
+			fg = colors.base0A,
+		},
 
-        TSAttribute = {
-            fg = colors.base0A,
-            sp = "none",
-        },
+		TSTagAttribute = {
+			link = "TSProperty",
+		},
 
-        TSCharacter = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSCharacter = {
+			fg = colors.base08,
+		},
 
-        TSConstBuiltin = {
-            fg = colors.base09,
-            sp = "none",
-        },
+		TSConstructor = {
+			fg = colors.base0C,
+		},
 
-        TSConstMacro = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSConstBuiltin = {
+			fg = colors.base09,
+		},
 
-        TSError = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSConstMacro = {
+			fg = colors.base08,
+		},
 
-        TSException = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSError = {
+			fg = colors.base08,
+		},
 
-        TSFloat = {
-            fg = colors.base09,
-            sp = "none",
-        },
+		TSException = {
+			fg = colors.base08,
+		},
 
-        TSKeywordFunction = {
-            fg = colors.base0E,
-            sp = "none",
-        },
+		TSFloat = {
+			fg = colors.base09,
+		},
 
-        TSKeywordReturn = {
-            fg = colors.base0E,
-            sp = "none",
-        },
+		TSKeyword = {
+			fg = colors.base0E,
+		},
 
-        TSFuncBuiltin = {
-            fg = colors.base0D,
-            sp = "none",
-        },
+		TSKeywordFunction = {
+			fg = colors.base0E,
+		},
 
-        TSFuncMacro = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSKeywordReturn = {
+			fg = colors.base0E,
+		},
 
-        TSKeywordOperator = {
-            fg = colors.base0E,
-            sp = "none",
-        },
+		TSFunction = {
+			fg = colors.base0D,
+		},
 
-        TSMethod = {
-            fg = colors.base0D,
-            sp = "none",
-        },
+		TSFuncBuiltin = {
+			fg = colors.base0D,
+		},
 
-        TSNamespace = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSFuncMacro = {
+			fg = colors.base08,
+		},
 
-        TSNone = {
-            fg = colors.base05,
-            sp = "none",
-        },
+		TSKeywordOperator = {
+			fg = colors.base0E,
+		},
 
-        TSParameter = {
-            fg = colors.base08,
-            sp = "none",
-        },
+		TSMethod = {
+			fg = colors.base0D,
+		},
 
-        TSParameterReference = {
-            fg = colors.base05,
-            sp = "none",
-        },
+		TSNamespace = {
+			fg = colors.base08,
+		},
 
-        TSPunctDelimiter = {
-            fg = colors.base0F,
-            sp = "none",
-        },
+		TSNone = {
+			fg = colors.base05,
+		},
 
-        TSPunctSpecial = {
-            fg = colors.base05,
-            sp = "none",
-        },
+		TSParameter = {
+			fg = colors.base08,
+		},
 
-        TSStringRegex = {
-            fg = colors.base0C,
-            sp = "none",
-        },
+		TSParameterReference = {
+			fg = colors.base05,
+		},
 
-        TSStringEscape = {
-            fg = colors.base0C,
-            sp = "none",
-        },
+		TSPunctBracket = {
+			fg = colors.base0F,
+		},
 
-        TSSymbol = {
-            fg = colors.base0B,
-            sp = "none",
-        },
+		TSPunctDelimiter = {
+			fg = colors.base0F,
+		},
 
-        TSTagDelimiter = {
-            fg = colors.base0F,
-            sp = "none",
-        },
+		TSPunctSpecial = {
+			fg = colors.base08,
+		},
 
-        TSText = {
-            fg = colors.base05,
-            sp = "none",
-        },
+		TSStringRegex = {
+			fg = colors.base0C,
+		},
 
-        TSStrong = {
-            bold = true,
-        },
+		TSStringEscape = {
+			fg = colors.base0C,
+		},
 
-        TSEmphasis = {
-            fg = colors.base09,
-            sp = "none",
-        },
+		TSSymbol = {
+			fg = colors.base0B,
+		},
 
-        TSStrike = {
-            fg = colors.base00,
-            sp = "none",
-            strikethrough = true,
-        },
+		TSTagDelimiter = {
+			fg = colors.base0F,
+		},
 
-        TSLiteral = {
-            fg = colors.base09,
-            sp = "none",
-        },
+		TSText = {
+			fg = colors.base05,
+		},
 
-        TSURI = {
-            fg = colors.base09,
-            sp = "none",
-            underline = true,
-        },
+		TSStrong = {
+			bold = true,
+		},
 
-        TSTypeBuiltin = {
-            fg = colors.base0A,
-            sp = "none",
-        },
+		TSEmphasis = {
+			fg = colors.base09,
+		},
 
-        TSVariableBuiltin = {
-            fg = colors.base09,
-            sp = "none",
-        },
+		TSStrike = {
+			fg = colors.base00,
+			strikethrough = true,
+		},
 
-        TSVariable = {
-            fg = colors.base05,
-        },
+		TSLiteral = {
+			fg = colors.base09,
+		},
 
-        TSDefinition = {
-            sp = colors.base04,
-            underline = true,
-        },
+		TSURI = {
+			fg = colors.base09,
 
-        TSDefinitionUsage = {
-            sp = colors.base04,
-            underline = true,
-        },
-    }
+			underline = true,
+		},
+
+		TSTypeBuiltin = {
+			fg = colors.base0A,
+		},
+
+		TSVariableBuiltin = {
+			fg = colors.base09,
+		},
+
+		TSVariable = {
+			fg = colors.base05,
+		},
+
+		TSDefinition = {
+			sp = colors.base04,
+			underline = true,
+		},
+
+		TSDefinitionUsage = {
+			sp = colors.base04,
+			underline = true,
+		},
+
+		TSCurrentScope = {
+			bold = true,
+		},
+
+		luaTSField = {
+			fg = colors.base0D,
+		},
+
+		TSFieldKey = {
+			fg = colors.base08,
+		},
+
+		TSProperty = {
+			fg = colors.base08,
+		},
+
+		TSInclude = {
+			link = "Include",
+		},
+
+		TSConditional = {
+			link = "Conditional",
+		},
+	}
 end

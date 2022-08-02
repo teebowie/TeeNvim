@@ -21,4 +21,7 @@ require("teebowie.plugins.alpha")
 require("teebowie.plugins.treesitter")
 require("teebowie.plugins.todo-comments")
 require("teebowie.plugins.colorizer")
-
+require("teebowie.plugins.indent")
+require("teebowie.plugins.session-manager")
+require("teebowie.plugins.dressing")
+require ("teebowie.plugins.shade")

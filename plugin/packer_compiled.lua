@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
   ["filetype.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
@@ -139,10 +144,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
+    url = "https://github.com/kkharji/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -229,6 +249,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["shade.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\shade.nvim",
+    url = "https://github.com/sunjon/shade.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-fzf-native.nvim",
@@ -258,6 +283,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-matchup"] = {
+    loaded = true,
+    path = "C:\\Users\\Teebu\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
   }
 }
 

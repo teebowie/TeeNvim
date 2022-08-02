@@ -16,14 +16,10 @@ local options = {
 		enable = true,
 		update_cwd = false,
 	},
-	hijack_directories = {
-		enable = true,
-		auto_open = true,
-	},
 	view = {
-		adaptive_size = true,
+		adaptive_size = false,
 		side = "left",
-		width = 24,
+		width = 35,
 		hide_root_folder = true,
 	},
 	git = {
@@ -91,3 +87,4 @@ local options = {
 }
 
 nvim_tree.setup(options)
+

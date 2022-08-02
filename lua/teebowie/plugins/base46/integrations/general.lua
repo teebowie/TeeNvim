@@ -39,13 +39,6 @@ return function(colors)
         DiagnosticWarn = { fg = colors.yellow },
         DiagnosticInformation = { fg = colors.green },
 
-        -- Whichkey
-        WhichKey = { fg = colors.blue },
-        WhichKeySeparator = { fg = colors.light_grey },
-        WhichKeyDesc = { fg = colors.red },
-        WhichKeyGroup = { fg = colors.green },
-        WhichKeyValue = { fg = colors.green },
-
         -- packer
         packerPackageName = { fg = colors.red },
 
