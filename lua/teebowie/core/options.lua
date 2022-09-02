@@ -3,8 +3,6 @@ local options = {
 	number = true,
 	relativenumber = true,
 	ruler = false,
-
-	-- Search settings
 	ignorecase = true,
 	smartcase = true,
 
@@ -23,7 +21,6 @@ local options = {
 	splitright = true,
 
 	-- Other
-	-- clipboard      = "unnamed,unnamedplus", -- Only for Linux
 	cursorline = true, --- Highlight of current line
 	laststatus = 3, --- Have a global statusline at the bottom instead of one for each window
 	mouse = "a", --- Enable mouse
@@ -33,10 +30,6 @@ local options = {
 	termguicolors = true, --- Correct terminal colors
 	undofile = true, --- Sets undo to file
 	updatetime = 100, --- Faster completion
-	viminfo = "'1000", --- Increase the size of file history
+	viminfo = "1000", --- Increase the size of file history
 	wrap = false, --- Display long lines as just one line
-}
-
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
+	}

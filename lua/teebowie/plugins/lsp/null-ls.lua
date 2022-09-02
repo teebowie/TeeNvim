@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 local formatting = null_ls.builtins.formatting
+local code_actions = null_ls.builtins.code_actions
 -- local diagnostics = null_ls.builtins.diagnostics
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
@@ -14,6 +15,7 @@ null_ls.setup({
 			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
 		}),
 		formatting.stylua,
+    code_actions.eslint_d
 	},
 	-- on_attach = function(client, bufnr)
 	--      if client.supports_method("textDocument/formatting") then

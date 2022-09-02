@@ -32,7 +32,6 @@ packer.init({
 
 -- Install plugin here
 return packer.startup(function(use)
-
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("lewis6991/impatient.nvim")
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
@@ -40,7 +39,7 @@ return packer.startup(function(use)
 	use("nathom/filetype.nvim")
 	use("rcarriga/nvim-notify")
 	use("moll/vim-bbye")
-  use("kyazdani42/nvim-web-devicons")
+	use("kyazdani42/nvim-web-devicons")
 
 	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim")
@@ -72,8 +71,11 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets")
 
 	-- LSP
-	use("neovim/nvim-lspconfig")
-	use("williamboman/nvim-lsp-installer")
+	use({
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	})
 	use("folke/trouble.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("kkharji/lspsaga.nvim")
