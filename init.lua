@@ -1,0 +1,10 @@
+pcall(require, "impatient")
+
+require("teebowie.options")
+require("teebowie.keymaps")
+require("teebowie.clipboard")
+require("teebowie.autocmd")
+require("teebowie.utils")
+require("teebowie.plugins")
+require("teebowie.colorscheme")
+require("teebowie.commands")
