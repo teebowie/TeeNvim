@@ -14,4 +14,4 @@ local theme_opts = {
   transparency = false,
 }
 
-require('base46').load_theme(theme_opts)
+pcall(require('base46')).load_theme(theme_opts)

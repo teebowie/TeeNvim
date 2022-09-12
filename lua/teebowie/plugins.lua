@@ -35,7 +35,6 @@ return packer.startup({
     use { 'teebowie/base46.nvim' }
 
     -- LSP
-    use { 'VonHeikemen/lsp-zero.nvim' }
     use { 'williamboman/mason.nvim' }
     use { 'williamboman/mason-lspconfig.nvim' }
     use { 'neovim/nvim-lspconfig' }
