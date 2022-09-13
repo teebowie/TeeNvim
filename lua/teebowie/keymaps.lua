@@ -79,7 +79,3 @@ keymap("n", "<leader>bf", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>cl", ":Telescope colorscheme<CR>", opts)
 keymap("n", "<leader>fh", ":Telescope oldfiles<CR>", opts)
 keymap("n", "<leader>pj", ":lua require'telescope'.extensions.project.project{}<CR>", opts)
-
--- NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-

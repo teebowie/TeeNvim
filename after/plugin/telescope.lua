@@ -39,7 +39,7 @@ local options = {
 	},
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close,
       },
     },
 
@@ -79,6 +79,15 @@ vim.keymap.set("n", "<leader>e", function()
     initial_mode = "normal",
     layout_config = { height = 40 }
   })
+end)
+
+vim.keymap.set("n", "<leader>xx", function()
+  require("telescope.builtin").diagnostics {
+    previewer = false,
+    shorten_path = true,
+    line_width = 85,
+    root_dir = telescope_buffer_dir()
+  }
 end)
 
 -- telescope-project.nvim

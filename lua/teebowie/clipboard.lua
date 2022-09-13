@@ -9,4 +9,4 @@ elseif has(win32) == 1 then
   opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
 else
   opt.clipboard:append { 'unnamedplus' }
-end  
+end
