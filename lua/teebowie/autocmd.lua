@@ -28,10 +28,6 @@ autocmd("BufEnter", {
 	command = "set fo-=c fo-=r fo-=o",
 })
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
--- TODO: Add a command to do this instead of binding to an autocmd
--- autocmd("BufWritePost", { pattern = "plugins.lua", command = "source <afile> | PackerSync" })
-
 -- Highlight on yank
 autocmd("TextYankPost", {
 	callback = function()
