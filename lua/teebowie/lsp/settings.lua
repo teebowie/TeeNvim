@@ -28,9 +28,6 @@ local config = {
 	signs = {
 		active = signs, -- show signs
 	},
-	update_in_insert = true,
-	underline = true,
-	severity_sort = true,
 	float = {
 		focusable = true,
 		style = "minimal",
@@ -75,6 +72,10 @@ local function on_attach(client, bufnr)
 	end
 
 	if client.name == "sumneko_lua" then
+		client.resolved_capabilities.document_formatting = false
+	end
+
+	if client.name == "html" then
 		client.resolved_capabilities.document_formatting = false
 	end
 
