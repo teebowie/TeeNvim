@@ -38,9 +38,7 @@ return packer.startup({
     use { 'williamboman/mason.nvim' }
     use { 'williamboman/mason-lspconfig.nvim' }
     use { 'neovim/nvim-lspconfig' }
-    use { 'MunifTanjim/prettier.nvim' }
     use { 'jose-elias-alvarez/null-ls.nvim' }
-    use { 'glepnir/lspsaga.nvim' }
 
     -- Fuzzy-finder
     use { 'nvim-telescope/telescope.nvim' }

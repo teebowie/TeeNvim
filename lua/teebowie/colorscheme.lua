@@ -1,12 +1,7 @@
--- vim.g.catppuccin_flavour = "mocha"
---
--- require('catppuccin').setup({
---   styles = {
---     comments = {},
---     conditionals = {},
---   },
--- })
--- vim.cmd [[colorscheme catppuccin]]
+local b46_ok, base46 = pcall(require, 'base46')
+if not b46_ok then
+vim.cmd [[colorscheme catppuccin]]
+end
 
 local theme_opts = {
   base = "base46",
@@ -14,4 +9,4 @@ local theme_opts = {
   transparency = false,
 }
 
-pcall(require('base46')).load_theme(theme_opts)
+base46.load_theme(theme_opts)
